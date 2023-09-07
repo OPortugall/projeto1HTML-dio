@@ -1,0 +1,129 @@
+<!--O projeto abaixo é um desafio sugerido no bootcamp de HTML básico da DIO.me, curso ministrado pelo professor: Diogo Mainardes-->
+<!--O projeto inteiro é também um exercício de estudos para este que vos fala-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1 - Aula HTML básico</title>
+
+    <style>
+
+        h4 {
+            color: gray;
+        }
+
+        h5 {
+            color: gray;
+        }
+
+        h6 {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <font face="arial">
+
+        <h1 id="inicio">Página Web resumindo o que foi aprendido no curso</h1>
+        <hr>
+
+        <h4><i>Essa página é um desafio proposto pelo professor do curso: Diogo Mainardes</i></h4>
+        <h5>Ao longo do projeto tentarei utilizar o máximo de tags aprendidas da forma mais harmonica e agradável que eu conseguir.</h5>
+        <h6><a href="https://github.com/OPortugall" target="_blank">Meu GitHub</a></h6>
+
+        
+        <h2>Índice</h2>
+        
+        <ul> <!--Ancoragens-->
+            
+            <li><a href="#historia">História da Web</a></li>
+            <li><a href="#clients">O que são clients</a></li>
+            <li><a href="#servers">O que são servers</a></li>
+            <li><a href="#programacao">Linguagens de programação</a></li>
+            <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+            <li><a href="#tags">O que são tags</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+            <li><a href="#referencia">Referências</a></li>
+                    
+        </ul>
+
+            <h2 id="historia">História da web</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>A internet surge na década de 60 durante a guerra fria, o governo norte americano pretendia criar uma rede de comunicação entre seu computadores
+            com o objetivo de melhorar a comunicação entre os mesmos e ser mais eficiente.</p>
+            <p>Também, os primeiros computadores surgiram um pouco antes, tendo o seu primeiro como o Mark 1 em 1944. Na época esse computador era usado para cálculos
+               e funcionava a base de várias válvulas e eram de tamanhos de quartos e pesavam algumas toneladas.</p>
+            <p>Exemplos de computadores:
+                <ol>
+                    <li>ENIAC, primeiro computador eletrônico;</li>
+                    <li>NPL Pilot ACE, primeiro computador com múltiplos própositos;</li>
+                    <li>Apple-1, primeiro computador da apple e um dos primeiros computadores pessoais da história.</li>
+                </ol>
+            </p>
+
+            <h2 id="clients">O que são clients</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>Client pode ser resumido como o consumidor, literalmente como o nome sugere, o cliente. Os clients são as máquinas que fazem as requisições aos servidores,
+               ao acessar um site por exemplo, o client será aquele que fará a busca e visitará o site, é aquele que busca a informação ou que consome o que é oferecido pelo site.</p>
+            <p>Clients não armazenam arquivos de um site, como um banco de dados, somente armazenam dados que esteja na máquina</p>
+            
+            <h2 id="servers">O que são servers</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>Servers se comunicam com os clients, porém do lado oposto da internet, os clients servem para armazenar dados e/ou fornecer esses dados ao clieent.
+               Existem várias formas de servers, como os bancos de dados, que armazenam informações de usuários, arquivos de uma empresa e outros exemplos.</p>
+            <p>Clients e servers utilizam diferentes linguagens de programação. HTML por exemplo é uma linguagem lida pelo client, mas não utilizada diretamente no server 
+               <mark>(vale lembrar que HTML não é uma linguagem de programação, mas sim de marcação)</mark>.
+            </p>
+            
+            <h2 id="programacao">Linguagens de programação</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>Pegando gancho, linguagens de programação, são códigos utilizados para dar comandos ao computador para que se alcance um objetivo. Como dito anteriormente
+               as linguagens usadas nos clients e nos servers são diferentes, porém, existem algumas que funcionam nos dois, como por exemplo o JavaScript, que pode ser lido tanto por 
+               clients quanto por servers, porém precisam ser compiladas e lidas por um programa localizado no browsers, sistema de busca, o mais famoso é o V8, sistema do google chrome.</p>
+            <p><strong>Vale também mencionar que sistemas operacionais são diferentes em cada um também, porém nesse caso não há sistemas operacionais idênticos para servers e clients.</strong> </p>
+            
+            <h2 id="estrutura">Estrutura básica do HTML</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p><abbr title="HyperText Markup Language">HTML</abbr>, ou linguagem de marcação de hipertexto é a linguagem utilizada para construção de sites web em geral, portanto essa linguagem precisa ser simples e didática
+            para que seja facilmente entendida por programadores e estudiosos das áreas. Portanto, podemos definir o básico do HTML em duas partes:
+                <ol>
+                <li>Head;</li>
+                <li>Body</li>
+                </ol>
+            </p>
+            <p>Como o nome sugere, Head é a cabeça do site, é tudo que o usuário não ve, parte dedica ao programador para fazer algumas formatações e informar ao browser o nome, onde está hospedado
+               e a linguagem do site, <del>basicamente é isso</del>.
+            </p>
+            <p>Já o body é o que o usuário consegue ver e ler, claro que a parte das tags não pode ser vista pelo usuário, a não ser que  o mesmo utilize da função "inspecionar o elemento".
+            </p>
+
+            <blockquote>A inspeção de elementos é um mecanismo disponibilizado pelos browsers para que se possa ler a linguagem de marcação e programação utilizada no site, e é possível que parte dos códigos sejam bloqueados por parte do servidor, para evitar problemas com segurança.</blockquote>
+
+            <h2 id="tags">O que são tags</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>Tags são os comandos dados ao computador para que ele execute uma ação. As tags usados no HTML sempre serão iniciadas pelo símbolo "<" e fechadas por ">", algumas tags
+               serão fechadas por "/>" e a maioria delas sera fechadas pelo seu próprio nome, porem com a barra vindo antes: &lt;p&gt;Teste&lt;/p&gt;.
+            </p>
+
+            <h2 id="conclusao">Conclusão</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>Basicamente o começo do curso foi isso, estou muito feliz e grato, pois o professor tem uma ótima didática e ensinou muito bem como utilizar as tags, o que cada um faz 
+               e fala muito sobre acessibilidade e como podemos fazer para deixar a aplicação de fácil acesso para vários dispositivos e diversos públicos.
+            </p>
+            <p><mark>Creio que consegui concluir o desafio de forma agradável e comprir com todas as propostas do desafio, até a próxima!</mark></p>
+
+            <h2 id="referencia">Referências</h2>
+            <small><a href="#inicio">(Voltar)</a></small>
+            <ul>
+                <li><a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiq3I7rlZeBAxUUkJUCHVusA8oQFnoECBgQAQ&url=https%3A%2F%2Fwww.buscape.com.br%2Fpc-computador%2Fconteudo%2Fprimeiro-computador-historia-da-informatica&usg=AOvVaw27Thj-0zBVZsaP9mTN2zrD&opi=89978449">Site informando um pouco mais sobre os primeiros computadores;</a></li>
+                <li><a target="_blank" href="https://www.w3schools.com/html/default.asp">site: w3schools, utilizado para aprender um pouco mais sobre tags;</a></li>
+                <li><a target="_blank" href="https://pt.stackoverflow.com/questions/59934/como-escrever-códigos-como-exemplo-sem-executar">Site usado para eu conseguir inserir tags no meio do texto sem as tornar funcionais.</a></li>
+            </ul>
+
+    </font>
+</body>
+</html>
